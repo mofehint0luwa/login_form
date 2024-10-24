@@ -1,0 +1,112 @@
+*{  
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 16px;
+}
+body{
+  height: 100%;
+  background-image: url(images/bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.container{
+  height: 480px;
+  width: 300px;
+  float: right;
+  margin-right: 70px;
+  margin-top: 100px;
+}
+.form{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-radius: 20px;
+  align-items: center;
+}
+.sign-in{
+  color: rgb(77, 121, 204);
+  font-weight: 600;
+}
+.logo-div{
+  height: 100px;
+  width: 100px;
+}
+.logo{
+  height: 100%;
+}
+.div-input{
+  display: inline-flex;
+  border: 1.5px solid rgb(77, 121, 204);
+  border-radius: 15px;
+}
+.icon{
+  height: 30px;
+}
+.input{
+  border-radius: 15px;
+  border: none;
+}
+.label{
+  color: rgb(77, 121, 204);
+  margin-left: 5px;
+  font-size: 14px;
+}
+.button{
+  background-color: rgb(209, 131, 209);
+  color: white;
+  width: 150px;
+  height: 35px;
+  border: 1.5px solid rgb(77, 121, 204);
+  border-radius: 15px;
+}
+.password{
+  color: rgb(77, 121, 204);
+}
+@media (max-width: 700px) {
+  body{
+    height: 100%;
+    background-image: url(images/bg.mobile.png);
+    background-size: 100%;
+  }
+  .container{
+    margin-top: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/*// Define the inputs and outputs
+const inputs = ['a', 's', 'd', 'f', 'g'];
+const outputs = ['h', 'j', 'k', 'l', 'm'];
+
+// Fisher-Yates Shuffle Algorithm to shuffle the outputs
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+    }
+    return array;
+}
+
+// Shuffle the outputs
+const shuffledOutputs = shuffle([...outputs]);
+
+// Assign shuffled outputs to inputs
+const result = {};
+inputs.forEach((input, index) => {
+    result[input] = shuffledOutputs[index];
+});
+
+// Output the result
+console.log('Assignments:');
+for (const [input, output] of Object.entries(result)) {
+    console.log(`${input} -> ${output}`);
+}
+*/
+
+/*javascript code to generate a random calender for 5 inputs
+ a,s,d,f,g,h which displays an output that assigns each to 
+ another such that no two inputs have the same output and the
+  result is completely random*/
